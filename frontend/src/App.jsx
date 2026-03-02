@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import FindWarehouse from './pages/FindWarehouse';
 import ShippingCharge from './pages/ShippingCharge';
 import Calculator from './pages/Calculator';
+import Explorer from './pages/Explorer';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
         <Route path="nearest-warehouse" element={<FindWarehouse />} />
         <Route path="shipping-charge" element={<ShippingCharge />} />
         <Route path="calculator" element={<Calculator />} />
-        <Route path="explorer" element={<div>Entities Explorer</div>} />
+        <Route path="explorer" element={<Explorer />} />
       </Route>
     </Routes>
   );

@@ -2,11 +2,9 @@ from marketplace.services.distance_service import haversine_distance
 from marketplace.services.shipping_service import get_transport_strategy
 from marketplace.exceptions import MarketplaceException
 
-
 STANDARD_COURIER_CHARGE = 10.0
 EXPRESS_EXTRA_PER_KG = 1.2
 DEFAULT_WEIGHT_KG = 1.0
-
 
 def calculate_shipping_charge(warehouse_location, customer_location, delivery_speed: str, weight_kg: float = DEFAULT_WEIGHT_KG) -> dict:
     if delivery_speed not in ('standard', 'express'):

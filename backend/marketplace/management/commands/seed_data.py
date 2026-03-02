@@ -1,13 +1,12 @@
 from django.core.management.base import BaseCommand
 from marketplace.models import Location, Customer, Seller, Product, Warehouse
 
-
 class Command(BaseCommand):
     help = 'Seed the database with initial marketplace data'
 
     def handle(self, *args, **options):
         self.stdout.write('Seeding database...')
-
+        
         Location.objects.all().delete()
 
         loc_cust1 = Location.objects.create(lat=11.232, lng=23.445495)

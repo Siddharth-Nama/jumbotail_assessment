@@ -66,7 +66,7 @@ class NearestWarehouseView(APIView):
             'warehouseCode': warehouse.code,
             'warehouseLocation': {
                 'lat': warehouse.location.lat,
-                'lng': warehouse.location.lng,
+                'long': warehouse.location.lng,
             },
         }
 
@@ -214,7 +214,7 @@ class ShippingChargeCalculateView(APIView):
                 'warehouseCode': warehouse.code,
                 'warehouseLocation': {
                     'lat': warehouse.location.lat,
-                    'lng': warehouse.location.lng,
+                    'long': warehouse.location.lng,
                 },
             },
             'breakdown': {

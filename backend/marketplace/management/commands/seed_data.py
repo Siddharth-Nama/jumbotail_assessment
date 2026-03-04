@@ -19,29 +19,26 @@ class Command(BaseCommand):
 
         Customer.objects.create(
             id=1, customer_code='CUST-123', name='Shree Kirana Store', phone='9847000001',
-            email='shree.kirana@example.com', address='MG Road, Block A',
-            city='Hyderabad', state='Telangana', pincode='500001', location=loc_cust1
+            email='shree.kirana@example.com', address='',
+            city='', state='', pincode='', location=loc_cust1
         )
         Customer.objects.create(
             id=2, customer_code='CUST-124', name='Andheri Mini Mart', phone='9101000002',
-            email='andheri.minimart@example.com', address='Andheri West, Shop 12',
-            city='Mumbai', state='Maharashtra', pincode='400053', location=loc_cust2
+            email='andheri.minimart@example.com', address='',
+            city='', state='', pincode='', location=loc_cust2
         )
 
         seller1 = Seller.objects.create(
             id=1, name='Nestle Seller', email='nestle.seller@example.com', phone='9000000001',
-            gstin='22AAAAA0000A1Z5', address='Nestle India, Industrial Area',
-            city='Bangalore', state='Karnataka', pincode='560001', location=loc_seller1
+            gstin='', address='', city='', state='', pincode='', location=loc_seller1
         )
         seller2 = Seller.objects.create(
             id=2, name='Rice Seller', email='rice.seller@example.com', phone='9000000002',
-            gstin='29BBBBB0000B1Z4', address='Rice Mills, APMC Yard',
-            city='Mumbai', state='Maharashtra', pincode='400001', location=loc_seller2
+            gstin='', address='', city='', state='', pincode='', location=loc_seller2
         )
         seller3 = Seller.objects.create(
             id=3, name='Sugar Seller', email='sugar.seller@example.com', phone='9000000003',
-            gstin='27CCCCC0000C1Z3', address='Sugar Factory Road',
-            city='Pune', state='Maharashtra', pincode='411001', location=loc_seller3
+            gstin='', address='', city='', state='', pincode='', location=loc_seller3
         )
 
         Product.objects.create(
@@ -65,14 +62,12 @@ class Command(BaseCommand):
 
         Warehouse.objects.create(
             id=1, name='Bangalore Warehouse', code='BLR_Warehouse', location=loc_wh1,
-            address='Whitefield Industrial Area', city='Bangalore',
-            state='Karnataka', pincode='560066', contact_phone='8000000001',
+            address='', city='', state='', pincode='', contact_phone='8000000001',
             is_active=True, capacity_kg=50000.0
         )
         Warehouse.objects.create(
             id=2, name='Mumbai Warehouse', code='MUMB_Warehouse', location=loc_wh2,
-            address='Bhiwandi Logistics Park', city='Mumbai',
-            state='Maharashtra', pincode='421302', contact_phone='8000000002',
+            address='', city='', state='', pincode='', contact_phone='8000000002',
             is_active=True, capacity_kg=75000.0
         )
 

@@ -98,21 +98,19 @@ const Calculator = () => {
           <div style={{marginTop: '1.5rem', marginBottom: '1rem', padding: '1rem', backgroundColor: '#f9fafb', borderRadius: '0.5rem'}}>
             <h4 style={{marginBottom: '0.5rem', color: 'var(--text-secondary)'}}>Routing Info</h4>
             <div className="result-details">
-              <p><strong>Nearest Warehouse:</strong> {result.nearestWarehouse.warehouseName} ({result.nearestWarehouse.distanceKm} km from seller)</p>
-              <p><strong>Seller:</strong> {result.nearestWarehouse.sellerName}</p>
-              <p><strong>Customer:</strong> {result.customerName}</p>
+              <p><strong>Nearest Warehouse:</strong> {result.nearestWarehouse.warehouseName} (Code: {result.nearestWarehouse.warehouseCode})</p>
             </div>
           </div>
 
           <div style={{padding: '1rem', backgroundColor: '#f9fafb', borderRadius: '0.5rem'}}>
             <h4 style={{marginBottom: '0.5rem', color: 'var(--text-secondary)'}}>Charge Breakdown</h4>
             <div className="result-details">
-              <p><strong>Delivery Distance:</strong> {result.breakdown.distance_km} km</p>
-              <p><strong>Transport Mode:</strong> {result.breakdown.transport_mode}</p>
-              <p><strong>Base Transport Charge:</strong> ₹{result.breakdown.base_charge}</p>
-              <p><strong>Delivery Speed:</strong> {result.breakdown.delivery_speed}</p>
-              <p><strong>Express Surcharge:</strong> ₹{result.breakdown.express_charge}</p>
-              <p><strong>Standard Courier Fee:</strong> ₹{result.breakdown.standard_courier_charge}</p>
+              <p><strong>Delivery Distance:</strong> {result.breakdown.distanceKm} km</p>
+              <p><strong>Transport Mode:</strong> {result.breakdown.transportMode}</p>
+              <p><strong>Base Transport Charge:</strong> ₹{result.breakdown.baseCharge}</p>
+              <p><strong>Delivery Speed:</strong> {result.breakdown.deliverySpeed}</p>
+              <p><strong>Express Surcharge:</strong> ₹{result.breakdown.expressCharge}</p>
+              <p><strong>Standard Courier Fee:</strong> ₹{result.breakdown.standardCourierCharge}</p>
             </div>
           </div>
         </div>

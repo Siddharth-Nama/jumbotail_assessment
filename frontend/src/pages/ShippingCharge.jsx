@@ -88,12 +88,12 @@ const ShippingCharge = () => {
         <div className="result-card card">
           <h3>Total Charge: ₹{result.shippingCharge}</h3>
           <div className="result-details">
-            <p><strong>Distance:</strong> {result.breakdown.distance_km} km</p>
-            <p><strong>Transport Mode:</strong> {result.breakdown.transport_mode}</p>
-            <p><strong>Base Transport Charge:</strong> ₹{result.breakdown.base_charge}</p>
-            <p><strong>Delivery Speed:</strong> {result.breakdown.delivery_speed}</p>
-            <p><strong>Surcharge (Express):</strong> ₹{result.breakdown.express_charge}</p>
-            <p><strong>Standard Courier Fee:</strong> ₹{result.breakdown.standard_courier_charge}</p>
+            <p><strong>Distance:</strong> {result.breakdown.distanceKm} km</p>
+            <p><strong>Transport Mode:</strong> {result.breakdown.transportMode}</p>
+            <p><strong>Base Transport Charge:</strong> ₹{result.breakdown.baseCharge}</p>
+            <p><strong>Delivery Speed:</strong> {result.breakdown.deliverySpeed}</p>
+            <p><strong>Surcharge (Express):</strong> ₹{result.breakdown.expressCharge}</p>
+            <p><strong>Standard Courier Fee:</strong> ₹{result.breakdown.standardCourierCharge}</p>
           </div>
         </div>
       )}
